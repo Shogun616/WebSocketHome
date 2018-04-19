@@ -1,5 +1,6 @@
 package org.example.websocket;
 
+import javax.enterprise.context.ApplicationScoped;
 import javax.websocket.OnClose;
 import javax.websocket.OnError;
 import javax.websocket.OnMessage;
@@ -7,6 +8,7 @@ import javax.websocket.OnOpen;
 import javax.websocket.Session;
 import javax.websocket.server.ServerEndpoint;
 
+@ApplicationScoped
 @ServerEndpoint("/actions")
 public class DeviceWebSocketServer {
      @OnOpen
